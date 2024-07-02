@@ -13,7 +13,7 @@ body {
     height: 100%;
     overflow: hidden;
     z-index: -100;
-    filter: brightness(.2);
+    filter: brightness(.5);
 }
 
 /* Video element that sets child positioning and size */
@@ -29,11 +29,23 @@ body {
 }
 
 /* MemoryZ Development Logo */
-.logo {
-    width: 329px;
+.middle {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: auto;
     height: auto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.middle p {
+    color: #e7e7e7;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 400;
 }
